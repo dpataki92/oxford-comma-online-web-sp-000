@@ -14,3 +14,18 @@ def oxford_comma(array)
   new_arr.join
 
 end
+
+# refactoring code above
+
+def oxford_comma_simple(array)
+  if array.length == 1
+    array.join
+  elsif array.length == 2
+    array[0] << " and "
+    array.join
+  elsif array.length > 2
+    array[-1] = "and "
+    array.join(", ")
+  end
+  
+end
