@@ -27,5 +27,5 @@ def oxford_comma_simple(array)
     array[-1] = "and "
     array.join(", ")
   end
-  
+
 end
